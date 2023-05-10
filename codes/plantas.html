@@ -82,10 +82,10 @@
         <h1>Cadastre suas plantas</h1>
     </div>
     <div class="fundo">.</div>
-    <form action="" class="plantas">
+    <form action="registrando_planta.php" class="plantas">
         <fieldset>
-            <label><input type="text" placeholder="Espécie da planta"></label>
-            <label><input type="number" placeholder="Quantidade"></label>
+            <label><input type="text" name="nome" placeholder="Espécie da planta"></label>
+            <label><input type="number" name="quantidade" placeholder="Quantidade"></label>
             <label>
                 <select name="tipoDeAdubo" id="adubo_idadubo">
                     <option value="" disabled selected>Selecione um adubo:</option>
@@ -96,9 +96,9 @@
                     <option>Opção 5</option>
                 </select>
             </label>
-            <label><input type="number" placeholder="Frequência"></label><br>
-            <label>Última aplicação: <input type="date"></label><br>
-            <button name="confirma_planta"><a href="confirmarplanta.html">Cadastrar planta</a></button>
+            <label><input type="number" name="frequencia_adubacao" placeholder="Frequência"></label><br>
+            <label>Última aplicação: <input type="date" name="ultima_aplicacao"></label><br>
+            <input type="submit">
         </fieldset>
     </form>
     <section>
