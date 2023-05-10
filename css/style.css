@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.texto {
+    width: 300px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+header {
+    background-color: #76a490;
+    padding: 10px;
+    height: 50px;
+}
+header li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 50px;
+    position: relative;
+    bottom: 55px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+header a {
+    text-decoration: none;
+    color: #000;
+}
+.logoclaro {
+    width: 50px;
+    height: 50px;
+}
+.botoes {
+    position: relative;
+    justify-content: center;           
+    width: 150px;
+    height: 35px;
+    background-color: #284b40;
+    text-align: center;
+    border-radius: 15px;
+}
+.botoes li{
+    list-style: none;                     
+}
+.botoes a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+fieldset ::-webkit-input-placeholder {
+    color: #423f32;
+    text-align: center;
+}
+fieldset input {
+    background-color: #76a490;
+    border: 1px solid #d2dcd7;
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+}
+fieldset legend {
+    bottom: 10px;
+}
