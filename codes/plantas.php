@@ -66,6 +66,11 @@
     </style>
 </head>
 <body>
+    <?php 
+    $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
+    $sql = "SELECT * FROM mydb.adubo";
+    $result = $conn->query($sql);
+    ?>
     <header>
         <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
         <nav>
@@ -82,18 +87,16 @@
         <h1>Cadastre suas plantas</h1>
     </div>
     <div class="fundo">.</div>
-    <form action="registrando_planta.php" class="plantas">
+    <form action="registrando_planta.php" class="plantas" method="post">
         <fieldset>
             <label><input type="text" name="nome" placeholder="Espécie da planta"></label>
             <label><input type="number" name="quantidade" placeholder="Quantidade"></label>
             <label>
                 <select name="tipoDeAdubo" id="adubo_idadubo">
                     <option value="" disabled selected>Selecione um adubo:</option>
-                    <option>Opção 1</option>
-                    <option>Opção 2</option>
-                    <option>Opção 3</option>
-                    <option>Opção 4</option>
-                    <option>Opção 5</option>
+                    <?php
+                        while ($row = $result->fetch_assoc()) { ?>
+                            <option> <?php echo $row["idadubo"] . "-" . $row["nome"] ?> </option> <?php } ?>
                 </select>
             </label>
             <label><input type="number" name="frequencia_adubacao" placeholder="Frequência"></label><br>
