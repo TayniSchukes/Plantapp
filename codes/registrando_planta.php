@@ -25,18 +25,18 @@ if ($conn->query($sql) === TRUE) {?>
             
             }
             button {
-            background-color: #284b40;
-            color: #fff;
-            border-radius: 15px;
-            width: 150px;
-            height: 35px;
-            margin-top: 8%;
-            border: none;
-        }
-        button a{
-            text-decoration: none;
-            color: white;
-        }
+                background-color: #284b40;
+                color: #fff;
+                border-radius: 15px;
+                width: 150px;
+                height: 35px;
+                margin-top: 8%;
+                border: none;
+            }
+            button a{
+                text-decoration: none;
+                color: white;
+            }
         </style>
     </head>
     <body>
