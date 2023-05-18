@@ -92,13 +92,13 @@
             <label><input type="text" name="nome" placeholder="Espécie da planta"></label>
             <label><input type="number" name="quantidade" placeholder="Quantidade"></label>
             <label>
-                <select name="tipoDeAdubo" id="adubo_idadubo">
+                <select name="diferente" id="adubo">
                     <option value="" disabled selected>Selecione um adubo:</option>
                     <?php
                         while ($row = $result->fetch_assoc()) { ?>
                             <option> <?php echo $row["idadubo"] . "-" . $row["nome"] ?> </option> <?php } ?>
                 </select>
-            </label>
+            </label>  
             <label><input type="number" name="frequencia_adubacao" placeholder="Frequência"></label><br>
             <label>Última aplicação: <input type="date" name="ultima_aplicacao"></label><br>
             <input type="submit">
