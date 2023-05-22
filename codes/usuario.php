@@ -51,12 +51,17 @@
     </style>
 </head>
 <body>
+    <?php 
+        $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
+        $sql = "SELECT * FROM mydb.usuario";
+        $result = $conn->query($sql);
+    ?>
     <header>
         <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="plantas.html">Plantas</a></li>
+                <li><a href="plantas.php">Plantas</a></li>
                 <li><a href="sensor.html">Sensores</a></li>
                 <li><a href="calendario.html">Calendário</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
@@ -67,16 +72,14 @@
         <h1>Cadastro</h1>
     </div>
     <div class="fundo">.</div>
-    <form action="">
+    <form action="registrando_usuario.php" class="usuario" method="post">
         <fieldset>
-            <label><input type="text" placeholder="Nome"></label><br>
-            <label><input type="text" placeholder="ID (ex:01234)"></label><br>
-            <label><input type="password" placeholder="Senha"></label><br>
-            <label><input type="password" placeholder="Confirme sua senha"></label>
+            <label><input type="text" name="nome_usuario" placeholder="Nome"></label><br>
+            <label><input type="e-mail" name="email" placeholder="E-mail"></label>
+            <label><input type="password" name="senha" placeholder="Senha"></label><br>
+            <label><input type="password" name="confirma_senha" placeholder="Confirme sua senha"></label>
+            <input type="submit">
         </fieldset>
     </form>
-    <div class="botoes" style="margin-left: 43%;bottom: 30%; position: absolute;">
-        <li><a href="confirmado.html">Confirmar</a></li>
-    </div>
 </body>
 </html>

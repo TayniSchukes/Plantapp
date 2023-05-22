@@ -10,15 +10,6 @@
         body {
             background-color: #d2dcd7;
         }
-        button {
-            background-color: #284b40;
-            color: #fff;
-            border-radius: 15px;
-            width: 150px;
-            height: 35px;
-            margin-top: 8%;
-            border: none;
-        }
         .plantas fieldset {
             text-align: center;
             width: 500px;
@@ -58,10 +49,6 @@
             margin-right: auto;
             border-radius: 25px;
             color: #fff;
-        }
-        button a{
-            text-decoration: none;
-            color: white;
         }
     </style>
 </head>
