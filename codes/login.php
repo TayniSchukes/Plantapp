@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>Plantapp. - Usuário</title>
+    <title>Plantapp. - Login</title>
     <style>
         body {
             background-color: #d2dcd7;
@@ -14,11 +14,11 @@
             position: absolute;
             text-align: center;
             width: 250px;
-            height: 320px;
+            height: 200px;
             background-color: #76a490;
             border-radius: 25px;
             border-style: none;
-            top: 22%;
+            top: 24%;
             bottom: 150px;
             margin-left: 38%;
         }
@@ -41,12 +41,13 @@
             background-color: #284b40;
             color: #284b40;
             width: 250px;
-            height: 320px;
+            height: 200px;
             border-radius: 25px;
             margin-left: 37%;
         }
         .titulo {
-            margin-left: 44%; 
+            text-align: center;
+            padding: 5px;
         }
     </style>
 </head>
@@ -67,16 +68,12 @@
             </ul>
         </nav>
     </header>
-    <div class="titulo">
-        <h1>Cadastro</h1>
-    </div>
+    <h1 class="titulo">Faça login:</h1>
     <div class="fundo">.</div>
-    <form action="registrando_usuario.php" class="usuario" method="post">
+    <form action="confirmando_login.php" class="usuario" method="post">
         <fieldset>
             <label><input type="text" name="nome_usuario" placeholder="Nome"></label><br>
-            <label><input type="e-mail" name="email" placeholder="E-mail"></label>
             <label><input type="password" name="senha" placeholder="Senha"></label><br>
-            <label><input type="password" name="confirma_senha" placeholder="Confirme sua senha"></label>
             <input type="submit">
         </fieldset>
     </form>

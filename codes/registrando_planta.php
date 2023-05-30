@@ -50,7 +50,6 @@ if ($conn->query($sql) === TRUE) {
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="plantas.php">Plantas</a></li>
-                        <li><a href="sensor.html">Sensores</a></li>
                         <li><a href="calendario.html">Calendário</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
                     </ul>
@@ -106,7 +105,6 @@ if ($conn->query($sql) === TRUE) {
                         <ul>
                             <li><a href="../index.html">Home</a></li>
                             <li><a href="plantas.php">Plantas</a></li>
-                            <li><a href="sensor.html">Sensores</a></li>
                             <li><a href="calendario.html">Calendário</a></li>
                             <li><a href="sobre.html">Sobre</a></li>
                         </ul>
@@ -160,7 +158,6 @@ if ($conn->query($sql) === TRUE) {
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="plantas.php">Plantas</a></li>
-                        <li><a href="sensor.html">Sensores</a></li>
                         <li><a href="calendario.html">Calendário</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
                     </ul>
@@ -215,7 +212,6 @@ if ($conn->query($sql) === TRUE) {
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="plantas.php">Plantas</a></li>
-                    <li><a href="sensor.html">Sensores</a></li>
                     <li><a href="calendario.html">Calendário</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                 </ul>
