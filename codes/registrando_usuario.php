@@ -113,7 +113,7 @@
                 </header>
                 <main>
                     <h1>Este usuário já foi cadastrado!</h1>
-                    <button><a href="../index.html">Fazer login</a></button><br>
+                    <button><a href="login.php">Fazer login</a></button><br>
                 </main>
             </body>
             </html>

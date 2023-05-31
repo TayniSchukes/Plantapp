@@ -2,8 +2,9 @@
 $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
 $oadubo = substr($_POST["diferente"], 0, 1);
 
-$sql = 'INSERT INTO planta(nome, frequencia_adubacao, adubo_idadubo, ultima_aplicacao, quantidade) values("' . $_POST["nome"] . '","' . $_POST["frequencia_adubacao"] . '","' . $oadubo . '","' . $_POST["ultima_aplicacao"] . '","' . $_POST["quantidade"] . '")';
+$sql = 'INSERT INTO planta(planta_nome, frequencia_adubacao, adubo_idadubo, ultima_aplicacao, quantidade) values("' . $_POST["nome"] . '","' . $_POST["frequencia_adubacao"] . '","' . $oadubo . '","' . $_POST["ultima_aplicacao"] . '","' . $_POST["quantidade"] . '")';
 $planta = $_POST["nome"];
+$quantas = $_POST["quantidade"];
 $sql2 = "SELECT * from planta WHERE nome = '$planta'";
 $result = $conn->query($sql2);
 
