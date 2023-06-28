@@ -75,6 +75,8 @@
     <div class="fundo">.</div>
     <form action="registrando_planta.php" class="plantas" method="post">
         <fieldset>
+            <label><input type="text" name="nome_usuario" placeholder="Insira seu nome de usuário"></label>
+            <label><input type="password" name="senha" placeholder="Insira a sua senha"></label>
             <label><input type="text" name="nome" placeholder="Espécie da planta"></label>
             <label><input type="number" name="quantidade" placeholder="Quantidade"></label>
             <label>
