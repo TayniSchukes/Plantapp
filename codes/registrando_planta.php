@@ -11,6 +11,7 @@ $asenha = $_POST["senha"];
 $sql2 = "SELECT * from planta WHERE planta_nome = '$planta';";  
 $sql3 = "SELECT nome from usuario WHERE nome = '$ousuario';";
 $sql4 = "SELECT senha from usuario WHERE senha = '$asenha';";
+//SELECT * from usuario WHERE nome = '$ousuario' and senha = '$asenha'; Isso apagando a linha acima
 $result2 = $conn->query($sql2);
 $result3 = $conn->query($sql3);
 $result4 = $conn->query($sql4);
@@ -66,7 +67,7 @@ if ($result3->num_rows > 0 && $result4->num_rows > 0) {
                 <main>
                     <h1>Planta Cadastrada!</h1>
                     <button><a href="../index.html">Voltar</a></button><br>
-                    <button><a href="planta.php">Cadastrar outra planta</a></button>
+                    <button><a href="plantas.php">Cadastrar outra planta</a></button>
                 </main>
             </body>
             </html>
@@ -119,7 +120,7 @@ if ($result3->num_rows > 0 && $result4->num_rows > 0) {
                 <main>
                     <h1>Planta já Cadastrada!</h1>
                     <button><a href="../index.html">Voltar</a></button><br>
-                    <button><a href="planta.php">Cadastrar uma planta diferente</a></button>
+                    <button><a href="plantas.php">Cadastrar uma planta diferente</a></button>
                 </main>
             </body>
             </html>
