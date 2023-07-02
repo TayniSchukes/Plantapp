@@ -63,7 +63,7 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="plantas.html">Plantas</a></li>
+                <li><a href="usuario.php">Cadastro</a></li>
                 <li><a href="calendario.html">Calendário</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
             </ul>

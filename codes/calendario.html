@@ -13,36 +13,16 @@
         .titulo {
             text-align: center;
         }
-        .calendario {
-            background-color: #a2bfb1;
-            width: 650px;
-            height: 450px;
-            border-radius: 20px;
-            margin-left: auto;
-            margin-right: auto;
+        .plantas fieldset {
             text-align: center;
-        }
-        .calendario h2 {
+            width: 500px;
+            height: 90px;
             background-color: #76a490;
-            text-align: center;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            font-size: 30px;
-        }
-        thead {
-            font-size: 20px;
-        }
-        tbody td {
-            padding-top: 5px;
-            padding-bottom: 5px;
-        }
-        table {
-            border-collapse: collapse;
+            border-radius: 25px;
+            border-style: none;
             margin-left: auto;
             margin-right: auto;
-        }
-        td {
-            border: 1px solid black;
+            position: relative;
         }
     </style>
 </head>
@@ -52,91 +32,21 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="plantas.html">Plantas</a></li>
-                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="plantas.php">Plantas</a></li>
+                <li><a href="codes/usuario.php">Cadastro</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>
     </header>
     <div class="titulo">
         <h1>Calendário de Plantio</h1>
+        <h2>Preencha seu usuário e senha para acompanhar seu calendário</h2>
     </div>
-    <div class="calendario">
-        <h2>Mês de Novembro</h2>
-        <table>
-            <thead>
-                <tr>
-                    <td style="width: 50px;">Data</td>
-                    <td style="width: 180px;">Espécie</td>
-                    <td style="width: 90px;">ID Planta</td>
-                    <td style="width: 60px;">Quantidade</td>
-                    <td style="width: 180px;">Atividade</td>
-                </tr>
-            </thead>
-            <tr>
-                <td>01</td>
-                <td>Orquídea Phalaenopsis</td>
-                <td>1</td>
-                <td>1</td>
-                <td>Regar</td>
-            </tr>
-            <tr>
-                <td>02</td>
-                <td>Samambaia</td>
-                <td>5</td>
-                <td>1</td>
-                <td>Regar</td>
-            </tr>
-            <tr>
-                <td>06</td>
-                <td>Suculenta</td>
-                <td>15</td>
-                <td>10</td>
-                <td>Adubar com fertilizante</td>
-            </tr>
-            <tr>
-                <td>07</td>
-                <td>Orquídea Phalaenopsis</td>
-                <td>1</td>
-                <td>1</td>
-                <td>Regar</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>Orquídea Chocolate</td>
-                <td>13</td>
-                <td>2</td>
-                <td>Colocar em um local menos ilumidado</td>
-            </tr>
-            <tr>
-                <td>15</td>
-                <td>Suculenta</td>
-                <td>15</td>
-                <td>10</td>
-                <td>Regar</td>
-            </tr>
-            <tr>
-                <td>16</td>
-                <td>Cacto</td>
-                <td>20</td>
-                <td>5</td>
-                <td>Regar</td>
-            </tr>
-            <tr>
-                <td>18</td>
-                <td>Muda de Hortelã</td>
-                <td>25</td>
-                <td>3</td>
-                <td>Regar</td>
-            </tr>
-            <tr>
-                <td>20</td>
-                <td>Girassol</td>
-                <td>30</td>
-                <td>1</td>
-                <td>Adubar com Enxofre</td>
-            </tr>
-        </table>
-    </div>
+    <form action="calendario_validacao.php" class="plantas" method="post">
+        <fieldset>
+            <label><input type="text" name="nome_usuario" placeholder="Insira seu nome de usuário"></label>
+            <label><input type="password" name="senha" placeholder="Insira a sua senha"></label>
+        </fieldset>
+    </form>
 </body>
 </html>

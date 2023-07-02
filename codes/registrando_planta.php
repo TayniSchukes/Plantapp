@@ -7,17 +7,20 @@ $planta = $_POST["nome"];
 $quantas = $_POST["quantidade"];
 $aplicacao = $_POST["ultima_aplicacao"];
 $ousuario = $_POST["nome_usuario"];
+$frequencia = $_POST["frequencia_adubacao"];
 $asenha = $_POST["senha"];
 $sql2 = "SELECT * from planta WHERE planta_nome = '$planta';";  
 $sql3 = "SELECT nome from usuario WHERE nome = '$ousuario';";
-$sql4 = "SELECT senha from usuario WHERE senha = '$asenha';";
+$sql4 = "SELECT nome from usuario WHERE nome = '$ousuario' and senha = '$asenha';";
+$sql5 = "SELECT * from planta WHERE usuario_planta = '$ousuario';";
 //SELECT * from usuario WHERE nome = '$ousuario' and senha = '$asenha'; Isso apagando a linha acima
 $result2 = $conn->query($sql2);
 $result3 = $conn->query($sql3);
 $result4 = $conn->query($sql4);
+$result5 = $conn->query($sql5);
 
-if ($result3->num_rows > 0 && $result4->num_rows > 0) {
-    if ($planta && $quantas && $aplicacao) {  
+if ($result4->num_rows > 0) {
+    if ($planta && $quantas && $aplicacao && $frequencia) {  
         if ($conn->query($sql) === TRUE) { ?>
             <!DOCTYPE html>
             <html lang="pt-br">
@@ -71,7 +74,7 @@ if ($result3->num_rows > 0 && $result4->num_rows > 0) {
                 </main>
             </body>
             </html>
-        <?php } elseif ($result2->num_rows > 0 && $conn->query($sql3)){ ?>
+        <?php } elseif ($result2->num_rows > 0 && $result5->num_rows > 0){ ?>
             <!DOCTYPE html>
             <html lang="pt-br">
             <head>
@@ -124,7 +127,9 @@ if ($result3->num_rows > 0 && $result4->num_rows > 0) {
                 </main>
             </body>
             </html>
-        <?php }
+        <?php } else {
+             echo "Error: " . $sql . "<br>" . $conn->error;
+        }
     } else { ?>
         <!DOCTYPE html>
         <html lang="pt-br">
