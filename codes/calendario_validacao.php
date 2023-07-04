@@ -5,7 +5,7 @@ $usuario = $_POST["nome_usuario"];
 $senha = $_POST["senha"];
 
 $sql = "SELECT * from usuario WHERE nome = '$usuario' and senha = '$senha';";
-$sql2 = "SELECT * from planta WHERE usuario_planta = '$usuario';";
+$sql2 = "SELECT planta.*, adubo.nome AS nome_adubo FROM planta INNER JOIN adubo ON planta.adubo_idadubo = adubo.idadubo WHERE planta.usuario_planta = 'Tayni';";
 
 $result = $conn->query($sql);
 $result2 = $conn->query($sql2);
@@ -28,7 +28,7 @@ if ($result->num_rows > 0) {
                         text-align: center;
                         margin-left: auto;
                         margin-right: auto;
-                        margin-top: 100px;
+                        margin-top: 50px;
                         border-radius: 20px;
                     }
                     button {
@@ -44,6 +44,9 @@ if ($result->num_rows > 0) {
                         text-decoration: none;
                         color: white;
                     }
+                    h1 {
+                        text-align: center;
+                    }
                 </style>
             </head>
             <body>
@@ -58,18 +61,25 @@ if ($result->num_rows > 0) {
                         </ul>
                     </nav>
                 </header>
+                <h1>Suas plantas e controle:</h1>
                 <main>
-                    <h1>Suas plantas e controle:</h1>
-                    <?php echo "Usuário: $usuario <br><br>"; 
-                    while ($planta = mysqli_fetch_assoc($result2)) {
-                        $ultimaAplicacao = strtotime($planta['ultima_aplicacao']);
-                        $aplicacoesSemanais = $planta['frequencia_adubacao'];
-                        $proximaAdubacao = strtotime("+1 week", $ultimaAplicacao);
-                        $dataProximaAdubacao = date('Y-m-d', $proximaAdubacao);
-            
-                        echo "Nome da planta: " . $planta['planta_nome'] . "<br>";
-                        echo "Próxima adubação: $dataProximaAdubacao . com o adubo . <br><br>";
-                    }?>
+                    <form action="atualizar_adubacao.php" method="post">
+                        <?php echo "<b>Usuário: $usuario </b><br><br>"; 
+                        while ($planta = mysqli_fetch_assoc($result2)) {
+                            $plantaNome = $planta['planta_nome'];
+                            $plantaUsuario = $planta['usuario_planta'];
+                            $ultimaAplicacao = strtotime($planta['ultima_aplicacao']);
+                            $aplicacoesSemanais = $planta['frequencia_adubacao'];
+                            $proximaAdubacao = strtotime("+1 week", $ultimaAplicacao);
+                            $dataProximaAdubacao = date('Y-m-d', $proximaAdubacao);
+                        
+                            echo "Nome da planta: " . $planta['planta_nome'] . "<br>";
+                            echo "Próxima adubação: $dataProximaAdubacao <br>";
+                            echo "Adubo: " . $planta['nome_adubo'] . "<br>";
+                            echo "<button type='submit'>Adubar</button> <br><br>";
+                            echo "<input type='hidden' name='planta_nome' value='$plantaNome'>";
+                            echo "<input type='hidden' name='planta_usuario' value='$plantaUsuario'>";
+                        }?>
                 </main>
             </body>
             </html>
