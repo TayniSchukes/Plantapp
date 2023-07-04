@@ -5,7 +5,7 @@ $usuario = $_POST["nome_usuario"];
 $senha = $_POST["senha"];
 
 $sql = "SELECT * from usuario WHERE nome = '$usuario' and senha = '$senha';";
-$sql2 = "SELECT planta.*, adubo.nome AS nome_adubo FROM planta INNER JOIN adubo ON planta.adubo_idadubo = adubo.idadubo WHERE planta.usuario_planta = 'Tayni';";
+$sql2 = "SELECT planta.*, adubo.nome AS nome_adubo FROM planta INNER JOIN adubo ON planta.adubo_idadubo = adubo.idadubo WHERE planta.usuario_planta = '$usuario';";
 
 $result = $conn->query($sql);
 $result2 = $conn->query($sql2);
@@ -83,7 +83,113 @@ if ($result->num_rows > 0) {
                 </main>
             </body>
             </html>
+    <?php } elseif ($numPlantas == 0) { ?>
+        <!DOCTYPE html>
+        <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="../css/style.css">
+            <title>Nenhuma Planta Cadastrada</title>
+            <style>
+                main {
+                    background-color: #76a490;
+                    width: 400px;
+                    height: 200px;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-radius: 20px;
+                }
+                button {
+                    background-color: #284b40;
+                    color: #fff;
+                    border-radius: 15px;
+                    width: 150px;
+                    height: 35px;
+                    margin-top: 8%;
+                    border: none;
+                }
+                button a{
+                    text-decoration: none;
+                    color: white;
+                }
+            </style>
+        </head>
+        <body>
+            <header>
+                <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="plantas.php">Plantas</a></li>
+                        <li><a href="calendario.html">Calendário</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <h1>Nenhuma planta cadastrada!</h1>
+                <button><a href="../index.html">Voltar</a></button><br>
+                <button><a href="plantas.php">Cadastre suas plantas</a></button>
+            </main>
+        </body>
+        </html>
     <?php } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
-} ?>
+} else {?>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <title>Senha Incorreta</title>
+        <style>
+            main {
+                background-color: #76a490;
+                width: 400px;
+                height: 200px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 20px;                
+            }  
+            button {
+                background-color: #284b40;
+                color: #fff;
+                border-radius: 15px;
+                width: 150px;
+                height: 35px;
+                margin-top: 8%;
+                border: none;
+            }
+            button a{
+                text-decoration: none;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="plantas.php">Plantas</a></li>
+                    <li><a href="calendario.html">Calendário</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Sua senha ou usuário estão incorretos!</h1>
+            <button><a href="calendario.html">Voltar</a></button><br>
+            <button><a href="usuario.php">Cadastre-se</a></button>
+        </main>
+    </body>
+    </html>
+<?php } ?>
