@@ -34,7 +34,6 @@ header a {
 .botoes {
     position: relative;
     justify-content: center;           
-    width: 150px;
     background-color: #284b40;
     text-align: center;
     border-radius: 15px;

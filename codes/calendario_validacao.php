@@ -63,9 +63,9 @@ if ($result->num_rows > 0) {
                 </header>
                 <h1>Suas plantas e controle:</h1>
                 <main>
-                    <form action="atualizar_adubacao.php" method="post">
-                        <?php echo "<b>Usuário: $usuario </b><br><br>"; 
-                        while ($planta = mysqli_fetch_assoc($result2)) {
+                    <?php echo "<b>Usuário: $usuario </b><br><br>"; 
+                    while ($planta = mysqli_fetch_assoc($result2)) { ?>
+                        <form action="atualizar_adubacao.php" method="post"> <?php
                             $plantaNome = $planta['planta_nome'];
                             $plantaUsuario = $planta['usuario_planta'];
                             $ultimaAplicacao = strtotime($planta['ultima_aplicacao']);
@@ -78,8 +78,9 @@ if ($result->num_rows > 0) {
                             echo "Adubo: " . $planta['nome_adubo'] . "<br>";
                             echo "<button type='submit'>Adubar</button> <br><br>";
                             echo "<input type='hidden' name='planta_nome' value='$plantaNome'>";
-                            echo "<input type='hidden' name='planta_usuario' value='$plantaUsuario'>";
-                        }?>
+                            echo "<input type='hidden' name='planta_usuario' value='$plantaUsuario'>"; 
+                        ?> </form>
+                    <?php }?>
                 </main>
             </body>
             </html>
