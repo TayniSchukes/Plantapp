@@ -10,17 +10,16 @@
         body {
             background-color: #d2dcd7;
         }
-        fieldset {
-            position: absolute;
+        fieldset {            
             text-align: center;
             width: 250px;
             height: 320px;
             background-color: #76a490;
             border-radius: 25px;
-            border-style: none;
-            top: 22%;
-            bottom: 150px;
-            margin-left: 38%;
+            border-style: none;          
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -15%;
         }
         fieldset input {
             background-color: #76a490;
@@ -43,10 +42,10 @@
             width: 250px;
             height: 320px;
             border-radius: 25px;
-            margin-left: 37%;
+            margin-left: 41%;
         }
-        .titulo {
-            margin-left: 44%; 
+        .titulo{
+            text-align: center;
         }
     </style>
 </head>
@@ -67,9 +66,7 @@
             </ul>
         </nav>
     </header>
-    <div class="titulo">
-        <h1>Cadastro</h1>
-    </div>
+    <h1 class="titulo">Cadastro</h1>
     <div class="fundo">.</div>
     <form action="registrando_usuario.php" class="usuario" method="post">
         <fieldset>

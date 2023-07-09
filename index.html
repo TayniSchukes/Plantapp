@@ -10,8 +10,10 @@
         body {
             background-image: url(images/background.png); 
             background-attachment: fixed;
-            background-size: 100%;
+            background-size: cover;
             background-color: #d2dcd7;
+            margin: 0;
+            padding: 0;
         }
         .logoescuro {
             width: 70px;
@@ -20,14 +22,11 @@
         .corpo{ 
             color: #284b40;
             font-size: 45px;
-            position: relative;
-            top: 80px;
             display: flex;
             justify-content: center;
             flex-direction: row;
             align-items: center;
         }
-        
     </style>
 </head>
 <body>
@@ -49,11 +48,7 @@
     <main class="texto">
         <p>Plantapp é um site dedicado à estruturação de calendários de plantio e monitoramento de plantas de acordo com as suas necessidades.</p> 
     </main>
-    <div class="botoes" style="margin-top: -30%;margin-left: auto; margin-right: auto;">
-        <li><a href="codes/usuario.php">Cadastre-se</a></li><br>
-    </div>
-    <div class="botoes" style="margin-left: auto; margin-right: auto;">
-        <li><a href="codes/plantas.php">Cadastre suas plantas</a></li>
-    </div>
+    <li class="botoes"><a href="codes/usuario.php">Cadastre-se</a></li>
+    <li class="botoes"><a href="codes/plantas.php">Cadastre suas plantas</a></li>
 </body>
 </html>
