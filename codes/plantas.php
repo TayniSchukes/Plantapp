@@ -9,18 +9,23 @@
     <style>
         body {
             background-color: #d2dcd7;
+            margin: 0;
+            padding: 0;
         }
         .plantas fieldset {
             text-align: center;
-            width: 500px;
-            height: 270px;
+            max-width: 500px;
+            width: 90%;
+            height: auto;
             background-color: #76a490;
             border-radius: 25px;
             border-style: none;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
+            margin-top: 3%;
+            margin-bottom: 20px;
+            padding: 20px;
             position: relative;
-            margin-top: -19%;
+            z-index: 1;
         }
         select {
             background-color: #76a490;
@@ -31,24 +36,28 @@
         .fundo {
             background-color: #284b40;
             color: #284b40;
-            width: 500px;
-            height: 270px;
+            width: 90%;
+            max-width: 500px;
+            height: 300px;
             border-radius: 25px;
-            z-index: -1;
-            margin-left: 29%;
-            position: relative;
+            z-index: 0;
+            margin: 0 auto;
+            left: calc(50% - 300px);
+            position: absolute;
         }
         .titulo1 {
             text-align: center;
+            margin: 20px 0;
         }
         section {
             background-color: #284b40;
             text-align: center;
             width: 500px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
             border-radius: 25px;
             color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
         }
     </style>
 </head>

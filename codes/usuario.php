@@ -12,14 +12,17 @@
         }
         fieldset {            
             text-align: center;
-            width: 250px;
-            height: 320px;
+            max-width: 250px;
+            width: 90%;
+            height: auto;
             background-color: #76a490;
             border-radius: 25px;
             border-style: none;          
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: -15%;
+            margin: 0 auto;
+            margin-top: 3%;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
         }
         fieldset input {
             background-color: #76a490;
@@ -39,10 +42,14 @@
         .fundo {
             background-color: #284b40;
             color: #284b40;
-            width: 250px;
+            max-width: 250px;
+            width: 90%;
             height: 320px;
             border-radius: 25px;
-            margin-left: 41%;
+            z-index: 0;
+            margin: 0 auto;
+            left: calc(50% - 180px);
+            position: absolute;
         }
         .titulo{
             text-align: center;
