@@ -9,54 +9,11 @@
     <style>
         body {
             background-color: #d2dcd7;
+            background-image: url(../images/background.png); 
+            background-attachment: fixed;
+            background-size: cover;
             margin: 0;
             padding: 0;
-        }
-        .verdeclaro {
-            display: inline-block;
-            position: absolute;
-            width: 270px;
-            height: 240px;
-            background-color: #76a490;
-            border-radius: 25px;
-        }
-        .escrito {
-            text-align: justify;
-            font-size: 19px;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        .parte1 {
-            top: 15%;
-            left: 27%;
-        }
-        .parte2 {
-            font-size: 22px;
-            left: 27%;
-            margin-top: -1%;
-        }
-        .parte3 {
-            font-size: 25px;
-        }
-        .foto {
-            width: 80%;
-            height: 80%;
-            padding-left: 8%;
-            padding-top: 8%;
-        }
-        .fundo {
-            display: inline-block;
-            background-color: #284b40;
-            color: #284b40;
-            width: 300px;
-            height: 240px;
-            border-radius: 25px;
-        }
-        .titulo1 {
-            margin-left: 26%; 
-        }
-        .linha2 {
-            margin-top: 3%;
         }
         footer {
             display: inline-block;
@@ -66,6 +23,24 @@
             bottom: 0;
             font-size: 10px;
             position: absolute;
+        }
+        .titulo1 {
+            text-align: center; 
+        }
+        .foto {
+            width: 20%;
+            height: 20%;
+        }
+        .principal {
+            background-color: #76a490;
+            text-align: center;
+            font-size: 19px;
+            border-radius: 25px;
+            width: 50%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
         }
     </style>
 </head>
@@ -81,29 +56,11 @@
             </ul>
         </nav>
     </header>
-    <div class="titulo1">
-        <h1>Como funciona?</h1>
-    </div>
-    <div class="fundo" style="margin-left: 26%">.</div>
-    <div class="verdeclaro escrito parte1">
-        <p>O Plantapp é responsável por gerenciar suas plantas e deixar que o seu cuidado seja mais automatizado. Nosso objetivo é que os dados para o seu cultivo estejam reunidos em um só lugar.</p>
-    </div>
-    <div class="verdeclaro" style="margin-top: -1%; margin-left: 2%; width: 300px;">
+    <h1 class="titulo1">Como funciona?</h1>
+    <div class="principal">
+        <p>O Plantapp é responsável por gerenciar suas plantas e deixar que o seu cuidado seja mais automatizado. Nosso objetivo é que os dados para o seu cultivo estejam reunidos em um só lugar. </p>
         <img class="foto" src="../images/logoescuro.png" alt="Foto do sensor da empresa">
-    </div>
-    <div class="fundo" style="margin-left: 1%;">.</div>
-    <div class="linha2">
-        <div class="fundo" style="margin-left: 26%">.</div>
-        <div class="verdeclaro escrito parte2">
-            <p>Montamos um calendário de cultivo especialmente com as suas plantas e adubos, para que o seu momento com as plantas seja apenas relaxamento!</p>
-        </div>
-        <div class="verdeclaro" style="margin-top: -1%; margin-left: 2%; width: 300px;">
-            <div class="verdeclaro escrito parte3">
-                <p>Nos acompanhe nas redes sociais:</p>
-                <p>Instagram @Plantapp.</p>
-            </div>
-        </div>
-        <div class="fundo" style="margin-left: 1%;">.</div>
+        <p>Montamos um calendário de cultivo especialmente com as suas plantas e adubos, para que o seu momento com as plantas seja apenas relaxamento!</p>
     </div>
     <footer>
         <p>
