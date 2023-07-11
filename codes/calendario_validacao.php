@@ -71,7 +71,7 @@ if ($result->num_rows > 0) {
                             $ultimaAplicacao = strtotime($planta['ultima_aplicacao']);
                             $aplicacoesSemanais = $planta['frequencia_adubacao'];
                             $proximaAdubacao = strtotime("+1 week", $ultimaAplicacao);
-                            $dataProximaAdubacao = date('Y-m-d', $proximaAdubacao);
+                            $dataProximaAdubacao = date('d-m-Y', $proximaAdubacao);
                         
                             echo "Nome da planta: " . $planta['planta_nome'] . "<br>";
                             echo "Próxima adubação: $dataProximaAdubacao <br>";

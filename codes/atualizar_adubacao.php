@@ -4,6 +4,7 @@ $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb');
 $plantaNome = $_POST['planta_nome'];
 $plantaUsuario = $_POST['planta_usuario'];
 $dataAtual = date('Y-m-d');
+date_default_timezone_set('America/Sao_Paulo');
 $sql = "UPDATE planta SET ultima_aplicacao = '$dataAtual' WHERE planta_nome = '$plantaNome' AND usuario_planta = '$plantaUsuario';";
 if ($conn->query($sql) === true) { ?>
     <!DOCTYPE html>
