@@ -21,6 +21,14 @@
                 <link rel="stylesheet" type="text/css" href="../css/style.css">
                 <title>Cadastro Confirmado</title>
                 <style>
+                    body {
+                        background-color: #d2dcd7;
+                        background-image: url(../images/background.png); 
+                        background-attachment: fixed;
+                        background-size: cover;
+                        margin: 0;
+                        padding: 0;
+                    }
                     main {
                         background-color: #76a490;
                         width: 400px;
@@ -74,6 +82,14 @@
                 <link rel="stylesheet" type="text/css" href="../css/style.css">
                 <title>Cadastro Confirmado</title>
                 <style>
+                    body {
+                        background-color: #d2dcd7;
+                        background-image: url(../images/background.png); 
+                        background-attachment: fixed;
+                        background-size: cover;
+                        margin: 0;
+                        padding: 0;
+                    }
                     main {
                         background-color: #76a490;
                         width: 400px;
@@ -113,7 +129,7 @@
                 </header>
                 <main>
                     <h1>Este usuário já foi cadastrado!</h1>
-                    <button><a href="login.php">Fazer login</a></button><br>
+                    <button><a href="usuario.php">Voltar</a></button><br>
                 </main>
             </body>
             </html>
@@ -127,6 +143,14 @@
                 <link rel="stylesheet" type="text/css" href="../css/style.css">
                 <title>Cadastro Confirmado</title>
                 <style>
+                    body {
+                        background-color: #d2dcd7;
+                        background-image: url(../images/background.png); 
+                        background-attachment: fixed;
+                        background-size: cover;
+                        margin: 0;
+                        padding: 0;
+                    }
                     main {
                         background-color: #76a490;
                         width: 400px;
@@ -183,6 +207,14 @@
                 <link rel="stylesheet" type="text/css" href="../css/style.css">
                 <title>Cadastro Confirmado</title>
                 <style>
+                    body {
+                        background-color: #d2dcd7;
+                        background-image: url(../images/background.png); 
+                        background-attachment: fixed;
+                        background-size: cover;
+                        margin: 0;
+                        padding: 0;
+                    }
                     main {
                         background-color: #76a490;
                         width: 400px;
@@ -191,15 +223,13 @@
                         margin-left: auto;
                         margin-right: auto;
                         border-radius: 20px;
-                    
                     }
                     button {
                         background-color: #284b40;
                         color: #fff;
                         border-radius: 15px;
                         width: 150px;
-                        height: 35px;
-                        margin-top: 8%;
+                        height: 35px;     
                         border: none;
                     }
                     button a{
@@ -237,6 +267,14 @@
                 <link rel="stylesheet" type="text/css" href="../css/style.css">
                 <title>Cadastro Confirmado</title>
                 <style>
+                    body {
+                        background-color: #d2dcd7;
+                        background-image: url(../images/background.png); 
+                        background-attachment: fixed;
+                        background-size: cover;
+                        margin: 0;
+                        padding: 0;
+                    }
                     main {
                         background-color: #76a490;
                         width: 400px;

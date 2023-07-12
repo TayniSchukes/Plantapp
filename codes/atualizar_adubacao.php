@@ -16,6 +16,14 @@ if ($conn->query($sql) === true) { ?>
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <title>Atualizado adubação</title>
         <style>
+            body {
+                background-color: #d2dcd7;
+                background-image: url(../images/background.png); 
+                background-attachment: fixed;
+                background-size: cover;
+                margin: 0;
+                padding: 0;
+            }
             main {
                 background-color: #76a490;
                 width: 400px;

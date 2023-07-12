@@ -95,6 +95,14 @@ if ($result->num_rows > 0) {
             <link rel="stylesheet" type="text/css" href="../css/style.css">
             <title>Nenhuma Planta Cadastrada</title>
             <style>
+                body {
+                    background-color: #d2dcd7;
+                    background-image: url(../images/background.png); 
+                    background-attachment: fixed;
+                    background-size: cover;
+                    margin: 0;
+                    padding: 0;
+                }
                 main {
                     background-color: #76a490;
                     width: 400px;
@@ -110,7 +118,6 @@ if ($result->num_rows > 0) {
                     border-radius: 15px;
                     width: 150px;
                     height: 35px;
-                    margin-top: 8%;
                     border: none;
                 }
                 button a{
@@ -133,7 +140,7 @@ if ($result->num_rows > 0) {
             </header>
             <main>
                 <h1>Nenhuma planta cadastrada!</h1>
-                <button><a href="../index.html">Voltar</a></button><br>
+                <button><a href="../index.html">Voltar</a></button><br><br>
                 <button><a href="plantas.php">Cadastre suas plantas</a></button>
             </main>
         </body>
@@ -151,6 +158,14 @@ if ($result->num_rows > 0) {
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <title>Senha Incorreta</title>
         <style>
+            body {
+                background-color: #d2dcd7;
+                background-image: url(../images/background.png); 
+                background-attachment: fixed;
+                background-size: cover;
+                margin: 0;
+                padding: 0;
+            }
             main {
                 background-color: #76a490;
                 width: 400px;
@@ -166,7 +181,6 @@ if ($result->num_rows > 0) {
                 border-radius: 15px;
                 width: 150px;
                 height: 35px;
-                margin-top: 8%;
                 border: none;
             }
             button a{
@@ -189,7 +203,7 @@ if ($result->num_rows > 0) {
         </header>
         <main>
             <h1>Sua senha ou usuário estão incorretos!</h1>
-            <button><a href="calendario.html">Voltar</a></button><br>
+            <button><a href="calendario.html">Voltar</a></button><br><br>
             <button><a href="usuario.php">Cadastre-se</a></button>
         </main>
     </body>
