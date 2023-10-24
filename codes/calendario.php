@@ -28,17 +28,9 @@
     </style>
 </head>
 <body>
-    <header>
-        <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="plantas.php">Plantas</a></li>
-                <li><a href="codes/usuario.php">Cadastro</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+        include "../includes/header.php";
+    ?>
     <div class="titulo">
         <h1>Calendário de Plantio</h1>
         <h2>Preencha seu usuário e senha para acompanhar seu calendário</h2>

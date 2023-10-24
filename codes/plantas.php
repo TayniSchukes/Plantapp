@@ -66,18 +66,8 @@
     $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
     $sql = "SELECT * FROM mydb.adubo";
     $result = $conn->query($sql);
+    include "../includes/header.php";
     ?>
-    <header>
-        <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="usuario.php">Cadastro</a></li>
-                <li><a href="calendario.html">Calendário</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
-    </header>
     <div class="titulo1">
         <h1>Cadastre suas plantas</h1>
     </div>
@@ -104,8 +94,7 @@
     <section>
         <h2>Lembre-se</h2>
         <p>1 - Os adubos já são cadastrados, você deve selecionar qual é o que usa em sua planta; <br>
-        2 - Caso você não use adubos nas suas plantas, é só deixar a seleção em branco, assim como a frequência;<br>
-        3 - A frequência refere-se à quantas vezes a planta é adubada por semana.</p>
+        2 - A frequência refere-se à quantas vezes a planta é adubada por semana.</p>
     </section>
 </body>
 </html>
