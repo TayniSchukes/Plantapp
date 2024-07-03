@@ -54,10 +54,10 @@ if ($result->num_rows > 0) {
                     <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
                     <nav>
                         <ul>
-                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../index.php">Home</a></li>
                             <li><a href="plantas.php">Plantas</a></li>
-                            <li><a href="calendario.html">Calendário</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="calendario.php">Calendário</a></li>
+                            <li><a href="sobre/index.php">Sobre</a></li>
                         </ul>
                     </nav>
                 </header>
@@ -203,7 +203,7 @@ if ($result->num_rows > 0) {
         </header>
         <main>
             <h1>Sua senha ou usuário estão incorretos!</h1>
-            <button><a href="calendario.html">Voltar</a></button><br><br>
+            <button><a href="calendario.php">Voltar</a></button><br><br>
             <button><a href="usuario.php">Cadastre-se</a></button>
         </main>
     </body>

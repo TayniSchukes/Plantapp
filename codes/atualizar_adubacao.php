@@ -53,17 +53,12 @@ if ($conn->query($sql) === true) { ?>
         </style>
     </head>
     <body>
-        <header>
-            <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="plantas.php">Plantas</a></li>
-                    <li><a href="calendario.html">Calendário</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                </ul>
-            </nav>
-        </header>
+        <?php 
+            $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
+            $sql = "SELECT * FROM mydb.adubo";
+            $result = $conn->query($sql);
+            include "../includes/header.php";
+        ?>
         <main>
             <h1>Planta adubada!</h1>
             <img id="foto" src="../images/logoclaro.png" alt="Logo da Plantapp"><br>
