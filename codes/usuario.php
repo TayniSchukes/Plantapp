@@ -61,18 +61,8 @@
         $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
         $sql = "SELECT * FROM mydb.usuario";
         $result = $conn->query($sql);
+        include "../includes/header.php";
     ?>
-    <header>
-        <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="plantas.php">Plantas</a></li>
-                <li><a href="calendario.html">Calendário</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
-    </header>
     <h1 class="titulo">Cadastro</h1>
     <div class="fundo">.</div>
     <form action="registrando_usuario.php" class="usuario" method="post">

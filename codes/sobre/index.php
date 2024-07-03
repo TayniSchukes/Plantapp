@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <title>Plantapp. - Sobre</title>
     <style>
         body {
             background-color: #d2dcd7;
-            background-image: url(../images/background.png); 
+            background-image: url(../../images/background.png); 
             background-attachment: fixed;
             background-size: cover;
-            margin: 0;
             padding: 0;
         }
         footer {
@@ -45,21 +44,13 @@
     </style>
 </head>
 <body>
-    <header>
-        <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="plantas.html">Plantas</a></li>
-                <li><a href="codes/usuario.php">Cadastro</a></li>
-                <li><a href="calendario.html">Calendário</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+        include "../../includes/header.php";
+    ?>
     <h1 class="titulo1">Como funciona?</h1>
     <div class="principal">
         <p>O Plantapp é responsável por gerenciar suas plantas e deixar que o seu cuidado seja mais automatizado. Nosso objetivo é que os dados para o seu cultivo estejam reunidos em um só lugar. </p>
-        <img class="foto" src="../images/logoescuro.png" alt="Foto do sensor da empresa">
+        <img class="foto" src="../../images/logoescuro.png" alt="Foto do sensor da empresa">
         <p>Montamos um calendário de cultivo especialmente com as suas plantas e adubos, para que o seu momento com as plantas seja apenas relaxamento!</p>
     </div>
     <footer>

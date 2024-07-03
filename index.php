@@ -12,8 +12,7 @@
             background-attachment: fixed;
             background-size: cover;
             background-color: #d2dcd7;
-            margin: 0;
-            padding: 0;
+             
         }
         .logoescuro {
             width: 70px;
@@ -30,17 +29,9 @@
     </style>
 </head>
 <body>
-    <header>
-        <img class="logoclaro" src="images/logoclaro.png" alt="Logo da empresa">
-        <nav>
-            <ul>
-                <li><a href="codes/plantas.php">Plantas</a></li>
-                <li><a href="codes/usuario.php">Cadastro</a></li>
-                <li><a href="codes/calendario.html">Calendário</a></li>
-                <li><a href="codes/sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php 
+        include "includes/header.php";
+    ?>
     <div class="corpo">
         <h1>Plantapp.</h1>
         <img class="logoescuro" src="images/logoescuro.png" alt="Logo da empresa">

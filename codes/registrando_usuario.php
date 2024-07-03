@@ -55,20 +55,15 @@
                 </style>
             </head>
             <body>
-                <header>
-                    <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
-                    <nav>
-                        <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="plantas.php">Plantas</a></li>
-                            <li><a href="calendario.html">Calendário</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
-                        </ul>
-                    </nav>
-                </header>
+                <?php 
+                    $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
+                    $sql = "SELECT * FROM mydb.adubo";
+                    $result = $conn->query($sql);
+                    include "../includes/header.php";
+                ?>
                 <main>
                     <h1>Usuário Cadastrado!</h1>
-                    <button><a href="../index.html">Voltar</a></button><br>
+                    <button><a href="../index.php">Voltar</a></button><br>
                 </main>
             </body>
             </html>
@@ -116,17 +111,12 @@
                 </style>
             </head>
             <body>
-                <header>
-                    <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
-                    <nav>
-                        <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="plantas.php">Plantas</a></li>
-                            <li><a href="calendario.html">Calendário</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
-                        </ul>
-                    </nav>
-                </header>
+                <?php 
+                    $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
+                    $sql = "SELECT * FROM mydb.adubo";
+                    $result = $conn->query($sql);
+                    include "../includes/header.php";
+                ?>
                 <main>
                     <h1>Este usuário já foi cadastrado!</h1>
                     <button><a href="usuario.php">Voltar</a></button><br>
@@ -177,17 +167,12 @@
                 </style>
             </head>
             <body>
-                <header>
-                    <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
-                    <nav>
-                        <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="plantas.php">Plantas</a></li>
-                            <li><a href="calendario.html">Calendário</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
-                        </ul>
-                    </nav>
-                </header>
+                <?php 
+                    $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
+                    $sql = "SELECT * FROM mydb.adubo";
+                    $result = $conn->query($sql);
+                    include "../includes/header.php";
+                ?>
                 <main>
                     <h1>Erro encontrado!</h1>
                     <p>Tente novamente ou contate a equipe de TI com os erros:</p>
@@ -239,17 +224,12 @@
                 </style>
             </head>
             <body>
-                <header>
-                    <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
-                    <nav>
-                        <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="plantas.php">Plantas</a></li>
-                            <li><a href="calendario.html">Calendário</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
-                        </ul>
-                    </nav>
-                </header>
+                <?php 
+                    $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
+                    $sql = "SELECT * FROM mydb.adubo";
+                    $result = $conn->query($sql);
+                    include "../includes/header.php";
+                ?>
                 <main>
                     <h1>O campo senha e confirma senha não coincidem</h1>
                     <button><a href="usuario.php">Voltar</a></button><br>
@@ -301,17 +281,12 @@
                 </style>
             </head>
             <body>
-                <header>
-                    <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
-                    <nav>
-                        <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="plantas.php">Plantas</a></li>
-                            <li><a href="calendario.html">Calendário</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
-                        </ul>
-                    </nav>
-                </header>
+                <?php 
+                    $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
+                    $sql = "SELECT * FROM mydb.adubo";
+                    $result = $conn->query($sql);
+                    include "../includes/header.php";
+                ?>
                 <main>
                     <h1>Preencha todos os campos!</h1>
                     <button><a href="usuario.php">Voltar</a></button><br>
