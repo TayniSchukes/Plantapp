@@ -3,7 +3,7 @@ $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb');
 
 $plantaNome = $_POST['planta_nome'];
 $plantaUsuario = $_POST['planta_usuario'];
-$dataAtual = date('Y-m-d');
+$dataAtual = date('Y/m/d');
 date_default_timezone_set('America/Sao_Paulo');
 $sql = "UPDATE planta SET ultima_aplicacao = '$dataAtual' WHERE planta_nome = '$plantaNome' AND usuario_planta = '$plantaUsuario';";
 if ($conn->query($sql) === true) { ?>
@@ -53,21 +53,16 @@ if ($conn->query($sql) === true) { ?>
         </style>
     </head>
     <body>
-        <header>
-            <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="plantas.php">Plantas</a></li>
-                    <li><a href="calendario.html">Calendário</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                </ul>
-            </nav>
-        </header>
+        <?php 
+            $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
+            $sql = "SELECT * FROM mydb.adubo";
+            $result = $conn->query($sql);
+            include "../includes/header.php";
+        ?>
         <main>
             <h1>Planta adubada!</h1>
             <img id="foto" src="../images/logoclaro.png" alt="Logo da Plantapp"><br>
-            <button><a href="calendario.html">Voltar as plantas</a></button><br>
+            <button><a href="calendario.php">Voltar as plantas</a></button><br>
         </main>
     </body>
     </html>
