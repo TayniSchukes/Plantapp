@@ -28,7 +28,7 @@ if ($conn->query($sql) === true) { ?>
             main {
                 background-color: #76a490;
                 width: 400px;
-                height: 200px;
+                height: 300px;
                 text-align: center;
                 margin-left: auto;
                 margin-right: auto;
@@ -49,7 +49,7 @@ if ($conn->query($sql) === true) { ?>
                 color: white;
             }
             #foto {
-                width: 50px;
+                width: 120px;
             }
         </style>
     </head>
@@ -62,7 +62,7 @@ if ($conn->query($sql) === true) { ?>
         ?>
         <main>
             <h1>Planta adubada!</h1>
-            <img id="foto" src="../images/logoclaro.png" alt="Logo da Plantapp"><br>
+            <img id="foto" src="../images/adubando.jpg" alt="Logo da Plantapp"><br>
             <button><a href="calendario.php">Voltar as plantas</a></button><br>
         </main>
     </body>
