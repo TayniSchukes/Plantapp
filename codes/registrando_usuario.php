@@ -19,6 +19,7 @@
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link rel="stylesheet" type="text/css" href="../css/style.css">
+                <link rel="shortcut icon" href="../images/logoclarop.ico" type="image/x-icon">
                 <title>Cadastro Confirmado</title>
                 <style>
                     body {
@@ -75,7 +76,8 @@
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link rel="stylesheet" type="text/css" href="../css/style.css">
-                <title>Cadastro Confirmado</title>
+                <link rel="shortcut icon" href="../images/logoclarop.ico" type="image/x-icon">
+                <title>Usuário Já Existe</title>
                 <style>
                     body {
                         background-color: #d2dcd7;
@@ -131,7 +133,8 @@
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link rel="stylesheet" type="text/css" href="../css/style.css">
-                <title>Cadastro Confirmado</title>
+                <link rel="shortcut icon" href="../images/logoclarop.ico" type="image/x-icon">
+                <title>Erro</title>
                 <style>
                     body {
                         background-color: #d2dcd7;
@@ -190,6 +193,7 @@
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link rel="stylesheet" type="text/css" href="../css/style.css">
+                <link rel="shortcut icon" href="../images/logoclarop.ico" type="image/x-icon">
                 <title>Cadastro Confirmado</title>
                 <style>
                     body {
@@ -245,6 +249,7 @@
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link rel="stylesheet" type="text/css" href="../css/style.css">
+                <link rel="shortcut icon" href="../images/logoclarop.ico" type="image/x-icon">
                 <title>Cadastro Confirmado</title>
                 <style>
                     body {

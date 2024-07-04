@@ -20,6 +20,7 @@ if ($result->num_rows > 0) {
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link rel="stylesheet" type="text/css" href="../css/style.css">
+                <link rel="shortcut icon" href="../images/logoclarop.ico" type="image/x-icon">
                 <title>Calendário</title>
                 <style>
                     main {
@@ -50,17 +51,12 @@ if ($result->num_rows > 0) {
                 </style>
             </head>
             <body>
-                <header>
-                    <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
-                    <nav>
-                        <ul>
-                            <li><a href="../index.php">Home</a></li>
-                            <li><a href="plantas.php">Plantas</a></li>
-                            <li><a href="calendario.php">Calendário</a></li>
-                            <li><a href="sobre/index.php">Sobre</a></li>
-                        </ul>
-                    </nav>
-                </header>
+                <?php 
+                    $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
+                    $sql = "SELECT * FROM mydb.adubo";
+                    $result = $conn->query($sql);
+                    include "../includes/header.php";
+                ?>
                 <h1>Suas plantas e controle:</h1>
                 <main>
                     <?php echo "<b>Usuário: $usuario </b><br><br>"; 
@@ -93,6 +89,7 @@ if ($result->num_rows > 0) {
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" type="text/css" href="../css/style.css">
+            <link rel="shortcut icon" href="../images/logoclarop.ico" type="image/x-icon">
             <title>Nenhuma Planta Cadastrada</title>
             <style>
                 body {
@@ -127,17 +124,12 @@ if ($result->num_rows > 0) {
             </style>
         </head>
         <body>
-            <header>
-                <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="plantas.php">Plantas</a></li>
-                        <li><a href="calendario.html">Calendário</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <?php 
+                $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
+                $sql = "SELECT * FROM mydb.adubo";
+                $result = $conn->query($sql);
+                include "../includes/header.php";
+            ?>
             <main>
                 <h1>Nenhuma planta cadastrada!</h1>
                 <button><a href="../index.html">Voltar</a></button><br><br>
@@ -156,6 +148,7 @@ if ($result->num_rows > 0) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="shortcut icon" href="../images/logoclarop.ico" type="image/x-icon">
         <title>Senha Incorreta</title>
         <style>
             body {
@@ -190,17 +183,12 @@ if ($result->num_rows > 0) {
         </style>
     </head>
     <body>
-        <header>
-            <img class="logoclaro" src="../images/logoclaro.png" alt="Logo da empresa">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="plantas.php">Plantas</a></li>
-                    <li><a href="calendario.html">Calendário</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                </ul>
-            </nav>
-        </header>
+        <?php 
+            $conn = mysqli_connect('localhost', 'root', 'Fajota1428!', 'mydb'); 
+            $sql = "SELECT * FROM mydb.adubo";
+            $result = $conn->query($sql);
+            include "../includes/header.php";
+        ?>
         <main>
             <h1>Sua senha ou usuário estão incorretos!</h1>
             <button><a href="calendario.php">Voltar</a></button><br><br>

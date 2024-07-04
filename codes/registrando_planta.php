@@ -29,6 +29,7 @@ if ($result4->num_rows > 0) {
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link rel="stylesheet" type="text/css" href="../css/style.css">
+                <link rel="shortcut icon" href="../images/logoclarop.ico" type="image/x-icon">
                 <title>Planta Cadastrada</title>
                 <style>
                     body {
@@ -85,7 +86,8 @@ if ($result4->num_rows > 0) {
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link rel="stylesheet" type="text/css" href="../css/style.css">
-                <title>Planta ja cadastrada</title>
+                <link rel="shortcut icon" href="../images/logoclarop.ico" type="image/x-icon">
+                <title>Planta Já Cadastrada</title>
                 <style>
                     body {
                         background-color: #d2dcd7;
@@ -98,7 +100,7 @@ if ($result4->num_rows > 0) {
                     main {
                         background-color: #76a490;
                         width: 400px;
-                        height: 200px;
+                        height: 320px;
                         text-align: center;
                         margin-left: auto;
                         margin-right: auto;
@@ -126,8 +128,8 @@ if ($result4->num_rows > 0) {
                         include "../includes/header.php";
                 ?>                
                 <main>
-                    <h1>Planta já Cadastrada!</h1><br>
-                    <button><a href="../index.html">Voltar</a></button><br><br>
+                    <h1>Esta planta já está registrada em seu calendário!</h1><br>
+                    <button><a href="../index.php">Voltar</a></button><br><br>
                     <button><a href="plantas.php">Cadastrar uma planta diferente</a></button>
                 </main>
             </body>
@@ -143,6 +145,7 @@ if ($result4->num_rows > 0) {
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" type="text/css" href="../css/style.css">
+            <link rel="shortcut icon" href="../images/logoclarop.ico" type="image/x-icon">
             <title>Preenha os campos</title>
             <style>
                 body {
@@ -199,15 +202,16 @@ if ($result4->num_rows > 0) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="shortcut icon" href="../images/logoclarop.ico" type="image/x-icon">
         <title>Senha Incorreta</title>
         <style>
             body {
-                    background-color: #d2dcd7;
-                    background-image: url(../images/background.png); 
-                    background-attachment: fixed;
-                    background-size: cover;
-                    margin: 0;
-                    padding: 0;
+                background-color: #d2dcd7;
+                background-image: url(../images/background.png); 
+                background-attachment: fixed;
+                background-size: cover;
+                margin: 0;
+                padding: 0;
             }
             main {
                 background-color: #76a490;
